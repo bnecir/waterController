@@ -1,18 +1,18 @@
 
 //Created by Alejandro Garcia for atmega2560
-// The system controlls the level of a house water tank, 
-// the water is extracted from 35 meters deep by a lectric pump controlled by this system throw a 5v Realy 
-// In addition the systems irrigates over 4 zones using timers. 
+// The system controlls the level of water tank, irrigation and pressure.
+// the water is extracted from 35 meters deep by a lectric pump controlled by this system throw a 5v Relay 
+// In addition the systems irrigates over 4 zones (programmable). 
 // All Events are logged on SDCARD (note: sdcard library uses 512 Bytes of RAM memory)
 // A lc1602 Display shows the current status of the system and it is requiered for Time/Date setup 
 // A matrix 4x4 Keyboard is required for time setup
 // The system includes a remote control using HT12 E/D (which activates the pump and a solenoid valve send flow trougth a hose 5th zone)
 // Solenoid valves are requiered and 7 relays ( 1 pump, 4 zones, 1 house water tank, hose )
 //
-// mesihas@gmail.com
 // The comments will be traslated to English on request
 // I am aware that the code is not the best, but works fine ! and it could be helpful to someone doing something similar
-
+// I will be working on it again durring 2016 to make it cleaner and ligth enough to fit in Ard UNO RAM memory
+// mesihas@gmail.com
 
 
 #include <Wire.h>  
